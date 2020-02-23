@@ -8,7 +8,7 @@ import java.util.List;
 // lets you get one at random, peek at the bag and add to the bag.
 public class RandomBag<T> {
 
-    final List<T> bag;
+    final private List<T> bag;
 
     public RandomBag(Collection<T> initialDice) {
         bag = new ArrayList<>(initialDice);

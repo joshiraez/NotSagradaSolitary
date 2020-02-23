@@ -1,6 +1,6 @@
 package game;
 
-public enum DiceColor {
+enum DiceColor {
     RED,
     GREEN,
     BLUE,

@@ -9,7 +9,7 @@ class GameControllerShould {
     void createANewGameWhenANewGameInputIsHandled() {
         //Given
         final var gameController = new GameController();
-        final var input = new Input(NotSagradaAction.NEW_GAME);
+        final var input = new Input(Action.NEW_GAME);
         //When
         final var newGame = gameController.input(input, null);
         //Then

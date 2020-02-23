@@ -1,7 +1,8 @@
 package game;
 
-public class GameStateFactory {
-    protected GameState getNewGame() {
+class GameStateFactory {
+
+    GameState getNewGame() {
         final var diceBagFactory = new DiceBagFactory();
 
         return new GameState(

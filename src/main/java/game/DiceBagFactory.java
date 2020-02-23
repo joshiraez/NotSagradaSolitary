@@ -7,8 +7,9 @@ import java.util.stream.Stream;
 
 import static game.DiceColor.*;
 
-public class DiceBagFactory {
-    public DiceBag initialDiceBag() {
+class DiceBagFactory {
+
+    DiceBag initialDiceBag() {
         return new DiceBag(
                 getInitialDice()
         );

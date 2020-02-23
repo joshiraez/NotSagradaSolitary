@@ -1,7 +1,7 @@
 package game;
 
-public class GameState {
-    private DiceBag diceBag;
+class GameState {
+    private final DiceBag diceBag;
 
     public GameState(DiceBag diceBag) {
         this.diceBag = diceBag;

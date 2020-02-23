@@ -1,9 +1,9 @@
 package game;
 
 public class Input {
-    private NotSagradaAction action;
+    private Action action;
 
-    public Input(NotSagradaAction action) {
+    public Input(Action action) {
         this.action = action;
     }
 }
