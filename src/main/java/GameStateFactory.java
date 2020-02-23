@@ -1,5 +1,9 @@
 public class GameStateFactory {
     protected GameState getNewGame() {
-        return new GameState();
+        final var diceBagFactory = new DiceBagFactory();
+
+        return new GameState(
+                diceBagFactory.initialDiceBag()
+        );
     }
 }
