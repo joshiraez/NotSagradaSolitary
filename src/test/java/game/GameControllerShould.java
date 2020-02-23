@@ -1,6 +1,7 @@
-import org.junit.jupiter.api.Test;
+package game;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class GameControllerShould {
 
@@ -12,6 +13,6 @@ class GameControllerShould {
         //When
         final var newGame = gameController.input(input, null);
         //Then
-        assertThat(newGame).isEqualToComparingFieldByFieldRecursively(new GameStateFactory().getNewGame());
+        Assertions.assertThat(newGame).isEqualToComparingFieldByFieldRecursively(new GameStateFactory().getNewGame());
     }
 }

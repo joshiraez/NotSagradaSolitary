@@ -1,6 +1,7 @@
-import org.junit.jupiter.api.Test;
+package game;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 class GameStateFactoryShould {
 
@@ -12,7 +13,7 @@ class GameStateFactoryShould {
         //When
         final var newGame = gameStateFactory.getNewGame();
         //Then
-        assertThat(newGame)
+        Assertions.assertThat(newGame)
                 .extracting("diceBag").element(0)
                 .isEqualTo(new DiceBagFactory().initialDiceBag());
     }

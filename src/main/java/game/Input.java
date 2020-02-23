@@ -1,3 +1,5 @@
+package game;
+
 public class Input {
     private NotSagradaAction action;
 

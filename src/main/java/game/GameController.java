@@ -1,3 +1,5 @@
+package game;
+
 public class GameController {
 
     public GameState input(Input input, GameState state) {
